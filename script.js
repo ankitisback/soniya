@@ -2,7 +2,7 @@ const music = document.getElementById("bgMusic");
 const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
 
-/* 🎵 Start music on first user interaction */
+/* 🎵 Music starts on first tap */
 function startMusic() {
   music.volume = 0.7;
   music.play().catch(() => {});
@@ -21,7 +21,7 @@ function moveNo() {
 noBtn.addEventListener("mouseover", moveNo);
 noBtn.addEventListener("touchstart", moveNo);
 
-/* 💖 YES → fake loading → final reveal */
+/* 💖 YES → loading → SPECIAL MESSAGE */
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `
     <div style="
@@ -69,6 +69,7 @@ yesBtn.addEventListener("click", () => {
         background:#fff0f5;
         font-family:Arial;
         text-align:center;
+        padding:20px;
       ">
         <img src="photo.jpg" style="
           width:170px;
@@ -77,10 +78,19 @@ yesBtn.addEventListener("click", () => {
           border:5px solid #ff5fa2;
           margin-bottom:15px;
         ">
-        <h1 style="color:#ff5fa2;">
-          💖 YAYYYYY 💖<br>
-          It was always YOU 🥰
-        </h1>
+
+        <h1 style="color:#ff5fa2;">💖 YAYYYYY 💖</h1>
+
+        <div class="special-message">
+          From the moment you came into my life, everything felt brighter.<br>
+          Your smile, your kindness, the way you make ordinary moments special —<br>
+          it all means more to me than words can say.<br><br>
+          I don’t just want today… I want all my days with you 💕
+        </div>
+
+        <p style="margin-top:10px;color:#ff5fa2;font-weight:bold;">
+          Always yours ❤️
+        </p>
       </div>
     `;
   }, 3500);
