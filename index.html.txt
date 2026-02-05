@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <h1>Do you think she’ll say yes? 🥹💖</h1>
+  <p class="tap-note">🔊 Tap anywhere to start music</p>
+
+  <img src="photo.jpg" class="her-photo" alt="Her Photo">
+
+  <!-- 💌 Special Message -->
+  <div class="special-message">
+    From the moment you came into my life, everything felt a little brighter.<br>
+    Your smile, your kindness, the way you make ordinary moments special —<br>
+    it all means more to me than I can ever explain.<br><br>
+    This isn’t just a question, it’s my heart asking… 💖
+  </div>
+
+  <p class="final-question">Will you be my Valentine? 🌸</p>
+
+  <div class="buttons">
+    <button id="yesBtn">Yes 💖</button>
+    <button id="noBtn">Think again 😏</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
